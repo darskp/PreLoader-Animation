@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0%;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        html {
+            font-size: 65.2%;
+        }
+
+        :root {
+            --bg-color: #2d3436;
+            --text-animation-slide-color: #2ed573;
+        }
+
+        .main-div {
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg-color);
+            display: -ms-grid;
+            display: grid;
+            place-items: center;
+        }
+
+        .main-div .center {
+            width: 20rem;
+            height: 20rem;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .main-div .center .rot {
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            border-radius: 50%;
+            border-left: 0.2rem solid var(--text-animation-slide-color);
+            -webkit-animation: dk 1s linear infinite;
+            animation: dk 1s linear infinite;
+        }
+
+        @-webkit-keyframes dk {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes dk {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .main-div .center h1 {
+            color: #bdc3c7;
+            font-size: 2.5rem;
+        }
+
+        /*# sourceMappingURL=var.css.map */
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="center">
+            <div class="rot">
+            </div>
+            <h1>Loading</h1>
+        </div>
+    </div>
+</body>
+
+</html>
